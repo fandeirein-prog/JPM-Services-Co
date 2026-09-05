@@ -1,81 +1,353 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JPM Services & Co</title>
-  <link rel="stylesheet" href="style.css">
+
+  <title>JPM Services & Co. | Professional Services</title>
+
+  <meta name="description"
+        content="JPM Services & Co. provides professional business services and dedicated client support.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #172033;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b1f3a;
+      color: white;
+      padding: 20px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(
+        rgba(11,31,58,0.88),
+        rgba(11,31,58,0.88)
+      );
+      color: white;
+      padding: 110px 6%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: white;
+      color: #0b1f3a;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 75px 6%;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 20px;
+      color: #0b1f3a;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 0 auto 45px;
+      text-align: center;
+      color: #555;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      padding: 30px;
+      border: 1px solid #e2e6eb;
+      border-radius: 8px;
+      background: #fafbfc;
+    }
+
+    .card h3 {
+      color: #0b1f3a;
+      margin-bottom: 12px;
+    }
+
+    .impact {
+      background: #f3f6f9;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    .disclaimer {
+      background: #fff4d6;
+      color: #5b4700;
+      padding: 18px 6%;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer {
+      background: #0b1f3a;
+      color: white;
+      text-align: center;
+      padding: 30px 6%;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">JPM Services & Co</div>
+  <div class="logo">JPM Services & Co.</div>
 
   <nav>
-    <a href="index.html">Accueil</a>
-    <a href="about.html">À propos</a>
-    <a href="services.html">Services</a>
-    <a href="impact.html">Notre impact</a>
-    <a href="careers.html">Carrières</a>
-    <a href="news.html">Actualités</a>
-    <a href="contact.html">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#communities">Communities</a>
+    <a href="#careers">Careers</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<main>
+<div class="disclaimer">
+  JPM Services & Co. is an independent company 
+  
 
-<section class="hero">
-  <div>
-    <h1>Des solutions professionnelles pensées pour vous</h1>
-    <p>
-      JPM Services & Co accompagne ses clients avec des services
-      professionnels fondés sur l'écoute, la transparence et l'engagement.
-    </p>
-    <a class="button" href="contact.html">Nous contacter</a>
+<section class="hero" id="home">
+  <h1>Professional Services. Trusted Support.</h1>
+
+  <p>
+    We help individuals, businesses and communities move forward
+    through reliable professional services and dedicated client support.
+  </p>
+
+  <a class="button" href="#services">Explore Our Services</a>
+</section>
+
+<section id="about">
+  <h2>About JPM Services & Co.</h2>
+
+  <p class="intro">
+    JPM Services & Co. is an independent service company focused on
+    professional support, client experience and practical solutions.
+    Our goal is to build lasting relationships by delivering clear,
+    dependable and responsible services.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Our Purpose</h3>
+      <p>
+        To provide dependable services that help our clients achieve
+        their goals with confidence.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Our Approach</h3>
+      <p>
+        We listen carefully, communicate clearly and work to provide
+        practical solutions for every client.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Our Values</h3>
+      <p>
+        Integrity, professionalism, transparency and respect guide
+        the way we work.
+      </p>
+    </div>
   </div>
 </section>
 
-<section class="intro">
-  <h2>Bienvenue chez JPM Services & Co</h2>
-  <p>
-    Nous sommes une entreprise indépendante qui accompagne particuliers,
-    entrepreneurs et organisations dans leurs projets.
+<section id="services" class="impact">
+  <h2>Our Services</h2>
+
+  <p class="intro">
+    Our services are designed to support clients with professional
+    assistance and straightforward solutions.
   </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Client Support</h3>
+      <p>
+        Dedicated assistance designed to help clients find information,
+        understand processes and receive timely support.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Business Services</h3>
+      <p>
+        Professional support for businesses seeking organized,
+        efficient and practical service solutions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Professional Assistance</h3>
+      <p>
+        Guidance and administrative support tailored to individual
+        client requirements.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Customer Relations</h3>
+      <p>
+        We focus on clear communication and positive long-term
+        relationships with the people we serve.
+      </p>
+    </div>
+
+  </div>
 </section>
 
-<section class="cards">
-  <article>
-    <h3>Nos services</h3>
-    <p>Découvrez notre gamme de services et notre approche personnalisée.</p>
-    <a href="services.html">En savoir plus</a>
-  </article>
+<section id="communities">
+  <h2>Our Communities</h2>
 
-  <article>
-    <h3>Notre engagement</h3>
-    <p>Nous plaçons la qualité, l'intégrité et la responsabilité au cœur de notre travail.</p>
-    <a href="impact.html">Découvrir</a>
-  </article>
+  <p class="intro">
+    We believe strong communities create opportunities for people
+    and businesses to grow. We are committed to responsible
+    engagement and meaningful community relationships.
+  </p>
 
-  <article>
-    <h3>À propos de nous</h3>
-    <p>Découvrez notre mission, nos valeurs et notre vision.</p>
-    <a href="about.html">En savoir plus</a>
-  </article>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Supporting People</h3>
+      <p>
+        We believe professional services should be accessible,
+        respectful and focused on people's needs.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Supporting Businesses</h3>
+      <p>
+        We encourage responsible business development and
+        sustainable professional relationships.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Creating Opportunities</h3>
+      <p>
+        We seek opportunities to contribute positively to the
+        communities where we operate.
+      </p>
+    </div>
+
+  </div>
 </section>
 
-<section class="contact">
-  <h2>Parlons de votre projet</h2>
-  <p>Notre équipe est disponible pour répondre à vos questions.</p>
-  <a class="button" href="contact.html">Nous contacter</a>
+<section id="careers" class="impact">
+  <h2>Careers</h2>
+
+  <p class="intro">
+    We are interested in people who value professionalism,
+    responsibility, teamwork and excellent client service.
+  </p>
+
+  <div style="text-align:center;">
+    <a class="button" href="#contact">
+      Contact Us About Opportunities
+    </a>
+  </div>
 </section>
 
-</main>
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+
+  <p class="intro">
+    Have a question or would like to learn more about our services?
+    Our team is available to receive your enquiry.
+  </p>
+
+  <p><strong>Email:</strong> contact@jpmservices.example</p>
+
+  <p><strong>Business Hours:</strong> Monday – Friday, 9:00 AM – 5:00 PM</p>
+</section>
 
 <footer>
-  <p>JPM Services & Co — Entreprise indépendante, affiliée à JPMorgan Chase & Co.</p>
-  <p>© 2026 JPM Services & Co. Tous droits réservés.</p>
+  <p>© 2026 JPM Services & Co. All rights reserved.</p>
+
+  <p style="margin-top:10px;">
+    JPM Services & Co. is an independent company and 
+    affiliated with JPMorgan Chase & Co.
+  </p>
 </footer>
 
 </body>
-      </html>
+  </html>
