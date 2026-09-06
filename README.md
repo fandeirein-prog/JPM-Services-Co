@@ -1,2 +1,3 @@
-# JPM-Services-Co
-Bank et support client — JPM Services &amp; Co.
+# JPM Bank & Co
+Business Banking & Trusted Support
+JPM Bank & Co
